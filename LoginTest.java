@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
     @Parameters({"username", "password"})
     public void sampleFakeTest(String username, String password) {
 
-        ExtentTestManager.getTest().setDescription("Valid Login Scenario with correct username and password");
+        ExtentTestManager.getTest().setDescription(" ");
         Assert.assertTrue(page.GetInstance(HomePage.class).isHomePageDisplayed());
         page.GetInstance(HomePage.class).login("fakeacc", "fakepass");
         Assert.assertTrue(page.GetInstance(LoggedInPage.class).isLoggedInPageDisplayed());
@@ -54,7 +54,7 @@ public class LoginTest extends BaseTest {
     @Parameters({"username", "password"})
     public void sampleLoginTestsWithDetails(String username, String password) {
 
-        ExtentTestManager.getTest().setDescription("Valid Login Scenario with correct username and password");
+        ExtentTestManager.getTest().setDescription(" ");
         Assert.assertTrue(page.GetInstance(HomePage.class).isHomePageDisplayed());
         ExtentTestManager.getTest().log(LogStatus.PASS, "Home page displayed successfully");
         page.GetInstance(HomePage.class).login(username, password);
